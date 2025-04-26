@@ -56,3 +56,6 @@ Contributions are welcome! Please follow these steps:
 - Font Awesome for icons.
 - Google Fonts for typography.
 - Unsplash for background images.
+
+## Note
+collaborated on a group project to develop a "Historical Places Explorer" website, featuring an AI chatbot that delivers detailed historical information about locations worldwide and incorporates a real-time data retrieval system using the Gemini API, with fallback data for offline testing.
