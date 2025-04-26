@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historical Places Explorer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-landmark"></i>
+                <span>Historical Places Explorer</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#chat" class="nav-button">Try Chatbot</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Explore the World's History</h1>
+            <p>Discover fascinating stories and historical facts about places around the globe through our interactive chatbot.</p>
+            <a href="#chat" class="cta-button">Start Exploring</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <h2>What You Can Discover</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Historical Places</h3>
+                <p>Explore ancient ruins, medieval castles, and modern landmarks. Get detailed information about their construction, significance, and historical events.</p>
+                <ul class="feature-list">
+                    <li>Ancient civilizations</li>
+                    <li>Medieval architecture</li>
+                    <li>Modern landmarks</li>
+                    <li>UNESCO World Heritage sites</li>
+                </ul>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-clock"></i>
+                <h3>Timeline Events</h3>
+                <p>Journey through time with chronological accounts of significant events that shaped these locations and their impact on world history.</p>
+                <ul class="feature-list">
+                    <li>Major historical events</li>
+                    <li>Cultural revolutions</li>
+                    <li>Architectural developments</li>
+                    <li>Political changes</li>
+                </ul>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-book"></i>
+                <h3>Cultural Heritage</h3>
+                <p>Understand the rich cultural traditions, customs, and practices that have been preserved and passed down through generations.</p>
+                <ul class="feature-list">
+                    <li>Local traditions</li>
+                    <li>Artistic expressions</li>
+                    <li>Religious practices</li>
+                    <li>Social customs</li>
+                </ul>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-info-circle"></i>
+                <h3>Detailed Information</h3>
+                <p>Access comprehensive historical data, architectural details, and interesting facts about any location you're curious about.</p>
+                <ul class="feature-list">
+                    <li>Architectural styles</li>
+                    <li>Historical figures</li>
+                    <li>Interesting facts</li>
+                    <li>Visitor information</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-content">
+            <h2>About Our Chatbot</h2>
+            <p class="about-intro">Our AI-powered chatbot is designed to provide you with detailed historical information about places around the world. Whether you're interested in ancient civilizations, medieval castles, or modern landmarks, our chatbot can help you explore their fascinating histories.</p>
+            
+            <div class="about-grid">
+                <div class="about-card">
+                    <i class="fas fa-robot"></i>
+                    <h3>AI-Powered</h3>
+                    <p>Powered by advanced AI technology to provide accurate and comprehensive historical information.</p>
+                    <ul class="about-list">
+                        <li>Natural language processing</li>
+                        <li>Real-time responses</li>
+                        <li>Contextual understanding</li>
+                    </ul>
+                </div>
+                <div class="about-card">
+                    <i class="fas fa-globe"></i>
+                    <h3>Global Coverage</h3>
+                    <p>Access historical information about locations from every continent and corner of the world.</p>
+                    <ul class="about-list">
+                        <li>Worldwide locations</li>
+                        <li>Multiple languages</li>
+                        <li>Cultural diversity</li>
+                    </ul>
+                </div>
+                <div class="about-card">
+                    <i class="fas fa-history"></i>
+                    <h3>Historical Accuracy</h3>
+                    <p>Get reliable and well-researched historical information from trusted sources.</p>
+                    <ul class="about-list">
+                        <li>Verified sources</li>
+                        <li>Regular updates</li>
+                        <li>Fact-checked content</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="about-cta">
+                <h3>Ready to Explore?</h3>
+                <p>Start your historical journey now and discover fascinating stories about places around the world.</p>
+                <a href="#chat" class="cta-button">Try the Chatbot</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chatbot Section -->
+    <section id="chat" class="chat-section">
+        <div class="app-container">
+            <div class="chat-container">
+                <div class="chat-header">
+                    <div class="header-content">
+                        <i class="fas fa-robot header-icon"></i>
+                        <h1>Historical Places Explorer</h1>
+                        <p class="header-subtitle">Ask me about any place's history!</p>
+                    </div>
+                </div>
+                <div class="suggestion-chips">
+                    <div class="suggestion-chip">
+                        <i class="fas fa-map-marker-alt"></i>
+                        Paris
+                    </div>
+                    <div class="suggestion-chip">
+                        <i class="fas fa-map-marker-alt"></i>
+                        New York
+                    </div>
+                    <div class="suggestion-chip">
+                        <i class="fas fa-map-marker-alt"></i>
+                        Rome
+                    </div>
+                    <div class="suggestion-chip">
+                        <i class="fas fa-map-marker-alt"></i>
+                        Tokyo
+                    </div>
+                </div>
+                <div id="chat-messages" class="chat-messages"></div>
+                <div class="input-container">
+                    <div class="input-wrapper">
+                        <i class="fas fa-search input-icon"></i>
+                        <input type="text" id="user-input" placeholder="Ask about any place's history...">
+                    </div>
+                    <button id="send-btn">
+                        <i class="fas fa-paper-plane"></i>
+                        Send
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Historical Places Explorer</h3>
+                <p>Discover the world's history through our interactive chatbot.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#chat">Chatbot</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Historical Places Explorer. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+
+</body>
+</html> 
